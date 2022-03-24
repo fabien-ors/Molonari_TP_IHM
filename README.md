@@ -24,6 +24,13 @@ En utilisant QtDesigner et PyQt (IDE au choix), la fenêtre (QDialog) devra perm
 
 ![Screenshot](screenshot.png)
 
+## Barème d'évaluation
+Note /20:
+* Chargement CSV fonctionnel : 5 pts 
+* Chargement SQL (écriture/lecture) : 5 pts
+* Visualisation de la table des mesures : 5 pts
+* Qualité du code et robustesse : 5 pts
+
 ## Ressources utiles
 Documentation C++ de Qt: https://doc.qt.io/qt-5/classes.html
 
