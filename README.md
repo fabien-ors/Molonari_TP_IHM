@@ -1,5 +1,4 @@
 # Molonari_TP_IHM
-Scripts de base pour le TP IHM - Molonari BT-11
 
 ## Objetif du TP
 Apprendre à utiliser PyQt et QtSql pour fabriquer une Interface Homme-Machine permettant de visualiser le contenu d'une base SQL.
@@ -27,6 +26,7 @@ En utilisant QtDesigner et PyQt (IDE au choix), la fenêtre (QDialog) devra perm
 
 ## Ressources utiles
 Documentation C++ de Qt: https://doc.qt.io/qt-5/classes.html
+
 Tutoriels bien pratiques:
 * https://realpython.com/qt-designer-python
 * https://realpython.com/python-pyqt-database
