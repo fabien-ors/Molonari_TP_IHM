@@ -219,7 +219,7 @@ class TemperatureViewer(From_tp_ihm_sql[0], From_tp_ihm_sql[1]):
         Write the given Pandas dataframe into the SQL database
         """
         # Remove the previous measures table (if so)
-        dropTableQuery = QSqlQuery()
+        dropTableQuery = QSqlQuery() #### Current opened connection is not mandatory
         ### TODO
         dropTableQuery.exec(
             """       
@@ -231,7 +231,7 @@ class TemperatureViewer(From_tp_ihm_sql[0], From_tp_ihm_sql[1]):
         
         # Create the table for storing the temperature measures (id, date, temp*4)
         ### TODO
-        createTableQuery = QSqlQuery()
+        createTableQuery = QSqlQuery(self.con) #### But it's better to indicate the current connection in query constructors
         createTableQuery.exec(
             """
             CREATE TABLE measures (
@@ -249,7 +249,7 @@ class TemperatureViewer(From_tp_ihm_sql[0], From_tp_ihm_sql[1]):
 
         # Construct the dynamic insert SQL request and execute it
         ### TODO
-        insertDataQuery = QSqlQuery()
+        insertDataQuery = QSqlQuery(self.con)
         insertDataQuery.prepare(
             """
             INSERT INTO measures (
@@ -281,7 +281,7 @@ class TemperatureViewer(From_tp_ihm_sql[0], From_tp_ihm_sql[1]):
         print("Tables in the SQL Database:", self.con.tables())
 
         # Read the database and print its content using SELECT
-        selectDataQuery = QSqlQuery()
+        selectDataQuery = QSqlQuery(self.con)
         ### TODO
         selectDataQuery.exec("SELECT date, t1, t2, t3, t4 FROM measures")
         date, t1, t2, t3, t4 = range(5)
