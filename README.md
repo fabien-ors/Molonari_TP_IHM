@@ -18,7 +18,7 @@ En utilisant QtDesigner et PyQt (IDE au choix), la fenêtre (QDialog) devra perm
 
 ## Instructions
 1. Partir des scripts fournis : https://github.com/fabien-ors/Molonari_TP_IHM
-2. Compléter et agencer l’UI avec QtDesigner (pour quelle ressemble à l'image ci-dessous)
+2. Compléter et agencer l’UI avec QtDesigner (pour qu'elle ressemble à l'image ci-dessous)
 3. Remplir les trous indiqués **# TODO** dans le script python
 4. Me renvoyer vos scripts par mail
 
